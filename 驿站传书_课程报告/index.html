@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>驿站传书</title>
+
+    <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+
+  <div id="canvasContainer" ></div>
+     
+<span id="textInputSpan">
+    <em id="em">难度：</em>
+        <select id='StyleSelect'>
+            <option value=3>简单</option>
+            <option value=6>一般</option>
+            <option value=10>困难</option>
+            <option value=15>超难</option>
+        </select>
+    <em id="em_a">输入</em><em id="em_b">你的</em><em id="em_c">消</em><em id="em_d"size='8'>息：</em>
+  <input id="textInput" maxlength="10" type="text" width="150" />
+  <button onclick="changeText()" style='background-image:url(3.png)'><h4>输入完毕</h4></button>
+</span>
+<div style="text-align:center;clear:both">
+
+</div>
+
+
+<audio controls="controls" hidden="hidden" autoplay="autoplay" loop="loop">
+  <source src="back.mp3" type="audio/mpeg" />
+    </audio>
+  <script src="index.js"></script>
+</body>
+
+</html>
